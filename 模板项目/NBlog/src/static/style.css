@@ -1,0 +1,33 @@
+body .input-group {
+  margin-bottom: 10px;
+}
+body .editor {
+  border: 1px solid #cccccc;
+  display: flex;
+  flex-direction: column;
+  height: 500px;
+}
+body .editor .content {
+  flex: 1;
+  border-top: 1px solid #cccccc;
+}
+body .article .info {
+  font-style: italic;
+  font-size: 12px;
+}
+body .article .title {
+  font-size: 16pt;
+  font-weight: bold;
+}
+body .article-in-page {
+  padding: 10px;
+}
+body .comments-container {
+  padding: 10px;
+}
+body .comments-container .comments {
+  margin-top: 20px;
+}
+body .comments-container .comments .comment .info {
+  font-weight: bold;
+}

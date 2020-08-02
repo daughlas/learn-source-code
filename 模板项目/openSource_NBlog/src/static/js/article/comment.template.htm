@@ -1,0 +1,23 @@
+<div class="comments-container panel panel-default">
+    <div>
+        <form ng-submit="formCommentSubmitHandler()">
+            <div class="input-group">
+                <span class="input-group-addon">评论：</span>
+                <textarea ng-model="content" required="required" class="form-control" placeholder="评论内容"></textarea>
+            </div>
+            <input class="btn btn-primary" type="submit" value="提交评论">
+        </form>
+    </div>
+
+    <div class="comments">
+        <div ng-if="!comments">正在加载评论...</div>
+        <div ng-if="comments">
+            <div class="comment" ng-repeat="c in comments">
+                <div class="info">评论者：{{c.user_name}}，评论时间：{{c.creation_time_string}}</div>
+                <div class="content">
+                    {{c.content}}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
